@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5e1a4; /* Burger bun color */
+        }
+        .form-container {
+            border: 5px solid #ccc;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .video-container {
+            margin-bottom: 20px;
+        }
+        .video-container video {
+            max-width: 370px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="C:\Users\marka\Downloads\y2meta.net_1080p-burger-animation-video-food-animation-in-adobe-after-effects.mp4""type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="form-container">
+        <h2>Burger Order Form</h2>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" name="contactNumber" required>
+
+            <label for="orderDate">Preferred Ordering Date:</label>
+            <input type="date" id="orderDate" name="orderDate" required>
+
+            <label for="burgerType">Select Burger Type:</label>
+            <select id="burgerType" name="burgerType" required>
+                <option value="beef">Beef Burger</option>
+                <option value="chicken">Chicken Burger</option>
+                <option value="veggie">Veggie Burger</option>
+            </select>
+
+            <label for="toppings">Toppings:</label>
+            <input type="checkbox" id="cheese" name="toppings" value="cheese">
+            <label for="cheese">Cheese</label>
+            <input type="checkbox" id="bacon" name="toppings" value="bacon">
+            <label for="bacon">Bacon</label>
+            <input type="checkbox" id="lettuce" name="toppings" value="lettuce">
+            <label for="lettuce">Lettuce</label>
+
+            <label for="instructions">Additional Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4"></textarea>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </div>
+
+</body>
+</html>
